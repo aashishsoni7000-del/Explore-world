@@ -1,7 +1,3 @@
- /* ======================
-   GLOBAL RESET
-====================== */
-
 *{
     margin:0;
     padding:0;
@@ -35,7 +31,7 @@ a{
 ====================== */
 
 .navbar{
-      background:linear-gradient(
+    background:linear-gradient(
         135deg,
         #141E30,
         #243B55
@@ -46,14 +42,12 @@ a{
     padding:18px 8%;
 }
 
- 
-    .logo{
+.logo{
     font-size:3rem;
     font-weight:700;
     color:white;
     text-shadow:0 3px 10px rgba(0,0,0,0.3);
 }
-
 
 .nav-links{
     list-style:none;
@@ -75,16 +69,14 @@ a{
 ====================== */
 
 .hero{
-    height:100vh;
+    min-height:100vh;
 
     background:
-     linear-gradient(
+    linear-gradient(
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
     url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-
-     
 
     background-size:cover;
     background-position:center;
@@ -99,6 +91,7 @@ a{
 
 .hero-content{
     max-width:800px;
+    padding:20px;
 }
 
 .hero h1{
@@ -111,6 +104,10 @@ a{
     margin-bottom:25px;
 }
 
+/* ======================
+   BUTTON
+====================== */
+
 .btn{
     display:inline-block;
     background:#ff6b35;
@@ -118,6 +115,7 @@ a{
     padding:12px 28px;
     border-radius:30px;
     font-weight:bold;
+    transition:0.3s;
 }
 
 .btn:hover{
@@ -148,7 +146,8 @@ a{
 
 .destination-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
     gap:25px;
 }
 
@@ -176,42 +175,6 @@ a{
     padding:20px;
 }
 
-.location{
-    color:#2563eb;
-    font-weight:bold;
-}
-
-.rating{
-    color:rgb(251, 202, 5);
-    margin:10px 0;
-}
-
-/* ======================
-   WHY CHOOSE US
-====================== */
-
-.why-us{
-    background:#0f172a;
-    color:white;
-    padding:50px 0;
-}
-
-.glass-grid{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:20px;
-}
-
-.glass-card{
-    background:white;
-    color:#333;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-}
-
 /* ======================
    TESTIMONIALS
 ====================== */
@@ -234,58 +197,16 @@ a{
     border-radius:15px;
 
     box-shadow:
-    0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.review-top{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    margin-bottom:15px;
-}
-
-.review-top img{
-    width:60px;
-    height:60px;
-    border-radius:50%;
-}
-
-/* ======================
-   PROGRESS BAR
-====================== */
-
-.ratings{
-    padding:80px 0;
-}
-
- 
-/* ======================
-   DESTINATION DETAIL
-====================== */
-
-.destination-detail{
-    padding: 10px 0;
-}
-
-.banner img{
-    height:450px;
-    object-fit:cover;
-    border-radius:15px;
-}
-
-.info-box{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    margin-top:20px;
-
-    box-shadow:
     0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* ======================
-   TABLES
+   TABLE
 ====================== */
+
+.destination-detail{
+    padding:40px 0;
+}
 
 .table-container{
     overflow-x:auto;
@@ -302,7 +223,8 @@ th{
     color:white;
 }
 
-th,td{
+th,
+td{
     border:1px solid #ddd;
     padding:15px;
     text-align:center;
@@ -318,20 +240,14 @@ th,td{
 ====================== */
 
 .contact-section{
-    padding:  10px 0;
+    padding:80px 20PX;
     background:#ebe1ea;
 }
 
-.contact-grid{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(350px,1fr));
-
-    gap:30px;
-}
-
-.contact-info,
 .contact-form{
+    max-width:700px;
+    margin:auto;
+
     background:rgb(241, 183, 183);
     padding:30px;
     border-radius:15px;
@@ -368,57 +284,9 @@ details{
     border-radius:10px;
 }
 
-/* ======================
-   NEWSLETTER
-====================== */
-
-.newsletter{
-    background:#eabae1;
-    color:rgb(17, 16, 16);
-    text-align:center;
-    padding:70px 0;
-}
-
-.newsletter form{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    margin-top:20px;
-}
-
-.newsletter input{
-    padding:12px;
-    width:300px;
-}
-
-.newsletter button{
-    padding:12px 25px;
-    border:none;
-    background:rgb(251, 250, 250);
-    font-weight:bold;
+summary{
     cursor:pointer;
-}
-
-/* ======================
-   MAP
-====================== */
-
-.map{
-    padding:80px 0;
-     background:#ebe1ea;
-}
-
-.map-box{
-    height:350px;
-    background:#cbd5e1;
-    border-radius:15px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:24px;
-    font-weight:bolder;
+    font-weight:bold;
 }
 
 /* ======================
@@ -434,30 +302,6 @@ footer{
     color:white;
     text-align:center;
     padding:25px;
-}
-
-
- /* ======================
-   offer box
-====================== */
-
-
-    .offer-box{
-    background:linear-gradient(135deg,#ff9966,#ff5e62);
-    color:white;
-    padding:30px;
-    border-radius:15px;
-    margin-bottom:30px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-.offer-box h2{
-    margin-bottom:15px;
-}
-
-.offer-box p{
-    margin-bottom:15px;
 }
 
 /* ======================
@@ -484,9 +328,12 @@ footer{
         font-size:16px;
     }
 
-    .newsletter form{
-        flex-direction:column;
-        align-items:center;
+    .logo{
+        font-size:2rem;
     }
-    
+
+    .section-title h2{
+        font-size:30px;
+    }
 }
+
